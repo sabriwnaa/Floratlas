@@ -33,6 +33,10 @@ module.exports.routes = {
   'GET /account/password':   { action: 'account/view-edit-password' },
   'GET /account/profile':    { action: 'account/view-edit-profile' },
 'GET /user/:id/minhas-plantas': 'UserController.minhasPlantas',
+'GET /mudinhas': 'UserPlantController.mudinhasDisponiveis',
+'GET /especies/buscar': 'PlantSpeciesController.buscarPorNome',
+'GET /user/:id/jardim': 'UserController.jardimCompleto',
+'GET /especies/filtro': 'PlantSpeciesController.filtrar',
 
 
   //  ╔╦╗╦╔═╗╔═╗  ╦═╗╔═╗╔╦╗╦╦═╗╔═╗╔═╗╔╦╗╔═╗   ┬   ╔╦╗╔═╗╦ ╦╔╗╔╦  ╔═╗╔═╗╔╦╗╔═╗

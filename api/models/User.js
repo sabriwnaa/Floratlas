@@ -20,7 +20,19 @@ module.exports = {
     userPlants: {
       collection: 'userplant',
       via: 'owner'
+    },
+    email: {
+      type: 'string',
+      isEmail: true,
+      required: true,
+      unique: true
+    },
+    password: {
+      type: 'string',
+      minLength: 6,
+      required: true
     }
+    
   }
 };
 
